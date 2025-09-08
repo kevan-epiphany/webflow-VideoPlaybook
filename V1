@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The B2B Founder's Content & Video Playbook</title>
+    
+    <!-- CONSOLIDATED LIBRARIES AND FONTS (LOADED ONCE) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- UNIFIED TAILWIND CONFIG -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'brand-accent': '#F5D251' }
+                }
+            }
+        }
+    </script>
+    
+    <!-- UNIFIED STYLESHEET FOR ALL PARTS -->
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #101010; color: #E0E0E0; scroll-behavior: smooth; }
+        .tab-active { border-color: #F5D251; color: #F5D251; font-weight: 600; }
+        .tab-inactive { border-color: transparent; color: #94a3b8; }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height .3s ease-out; }
+        .chart-container { position: relative; width: 100%; max-width: 400px; margin: 1rem auto; height: 400px; }
+        .matrix-cell { transition: all .2s ease-in-out; cursor: pointer; }
+        .matrix-cell.active, .matrix-cell:hover { background-color: #1f2937; transform: scale(1.05); box-shadow: 0 0 20px rgba(245, 210, 81, .2); }
+        .prompt-code { white-space: pre-wrap; word-wrap: break-word; }
+        .month-tab { cursor: pointer; transition: all .2s ease-in-out; }
+        .month-tab.active { background-color: #F5D251; color: #101010; }
+        .month-tab:not(.active) { background-color: #1f2937; }
+        .month-content { display: none; }
+        .month-content.active { display: block; }
+        .matrix-selector button.active { background-color: #F5D251; color: #101010; }
+        .framework-example { display: none; }
+        .framework-example.active { display: block; }
+        .checklist-item input:checked + label svg { display: block; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- PART 1: THE STRATEGIC FOUNDATION -->
+    <div id="part1-container" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-12 text-center"><h1 class="text-4xl sm:text-5xl font-extrabold text-white">The B2B Founder's Content & Video Playbook</h1><p class="text-lg text-slate-400 mt-2 max-w-3xl mx-auto">Part 1: The Strategic Foundation</p></header>
+        <nav id="main-nav-p1" class="sticky top-0 bg-[#101010]/80 backdrop-blur-sm z-10 rounded-lg mb-8">
+            <div class="border-b border-slate-700">
+                <div class="-mb-px flex space-x-4 sm:space-x-8 overflow-x-auto px-4" aria-label="Tabs">
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 text-sm tab-active" data-target="content-philosophy">The KLT Philosophy</button>
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 text-sm tab-inactive" data-target="content-mindset">Mindset & Opportunity</button>
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 text-sm tab-inactive" data-target="content-pitfalls">Common Pitfalls</button>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="content-philosophy" class="content-section active">
+                <div class="p-8 bg-slate-900 rounded-lg border border-slate-800 mb-8">
+                    <h2 class="text-3xl font-bold text-white mb-4">The New Imperative: Building Trust in a Low-Trust World</h2>
+                    <p class="text-slate-400 leading-relaxed text-lg">In today's B2B landscape, the old playbook is broken. Institutional trust is at an all-time low, and decision-makers are tuning out polished corporate messaging. They seek connection and credibility not from logos, but from people. This is the strategic imperative for founders, CEOs, and executives: to become the trusted voice of their organisation.</p>
+                    <p class="mt-4 text-slate-400 leading-relaxed text-lg">This playbook is your guide to navigating this new reality. It’s built on a simple yet powerful human principle—the <strong class="text-brand-accent">Know, Like, Trust</strong> framework—and supercharged with the most potent trust-building medium available today: <strong class="text-brand-accent">video</strong>.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-lg border border-slate-800">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">The KLT Journey: From Stranger to Advocate</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center border border-slate-700 p-6 rounded-lg"><div class="text-4xl font-bold text-brand-accent mb-3">1</div><h4 class="text-xl font-bold text-white mb-2">KNOW</h4><p class="text-slate-400">Before anyone can buy, they must know you exist. This stage is about earning attention with valuable, low-friction content that makes you a familiar presence in their feed. It's about being consistently visible and helpful.</p></div>
+                        <div class="text-center border border-slate-700 p-6 rounded-lg"><div class="text-4xl font-bold text-brand-accent mb-3">2</div><h4 class="text-xl font-bold text-white mb-2">LIKE</h4><p class="text-slate-400">Familiarity evolves into affinity. People do business with those they like. This stage is about connecting on a human level by sharing your values, your mission, and your unique perspective. It’s where personality builds preference.</p></div>
+                        <div class="text-center border border-slate-700 p-6 rounded-lg"><div class="text-4xl font-bold text-brand-accent mb-3">3</div><h4 class="text-xl font-bold text-white mb-2">TRUST</h4><p class="text-slate-400">This is the most critical stage. Trust is earned when your audience sees you as a credible authority who can solve their problems. This is where expertise builds confidence and commercial conversations begin.</p></div>
+                    </div>
+                </div>
+            </section>
+            <section id="content-mindset" class="content-section">
+                <div class="p-8 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-3xl font-bold text-white mb-4">The Founder's Mindset: Seizing the Trust Opportunity</h2><p class="text-slate-400 leading-relaxed text-lg">Adopting this strategy requires a shift in mindset. You are not creating ads; you are building relationships. You are not chasing virality; you are building a predictable content engine. This section highlights the massive opportunity for leaders willing to embrace authenticity and systemisation.</p></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white text-center mb-2">The B2B Trust Gap is Your Opportunity</h3><p class="text-sm text-slate-400 text-center mb-4">Data shows a clear preference for human-led, authentic content. This is where you have a competitive advantage.</p><div class="chart-container"><canvas id="trustChart"></canvas></div></div>
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white mb-4">Key Principles for Success</h3><ul class="space-y-4"><li class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">Authenticity > Polish</h4><p class="text-sm text-slate-400 mt-1">B2B buyers respond more to candid, insight-rich video than to slick corporate ads. Prioritise message clarity over cinematic production. Sharing lessons from mistakes builds more trust than pretending perfection.</p></li><li class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">Systems > Virality</h4><p class="text-sm text-slate-400 mt-1">Sustainable success comes from a systematic process, not chasing one-off viral hits. Frameworks like the StoryBrand Narrative Arc provide repeatable structures for creating consistently valuable content that drives measurable outcomes.</p></li><li class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">Distribution Multiplies Impact</h4><p class="text-sm text-slate-400 mt-1">The value of your content is multiplied when it's leveraged by your entire organisation. Employee networks have a larger, more trusted reach than corporate channels alone. A great video must be paired with a great distribution plan.</p></li></ul></div>
+                </div>
+            </section>
+            <section id="content-pitfalls" class="content-section">
+                <div class="p-8 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-3xl font-bold text-white mb-4">Navigating the Pitfalls: The Traps That Kill Trust</h2><p class="text-slate-400 leading-relaxed text-lg">Many leaders start with good intentions but fall into common traps that undermine their credibility and waste their time. The most dangerous of these is the obsession with vanity metrics. True influence is not measured in likes, but in genuine engagement and business impact.</p></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white text-center mb-2">The Vanity Metrics Trap</h3><p class="text-sm text-slate-400 text-center mb-4">Focusing on the wrong numbers leads to the wrong content. This chart shows where your focus should be.</p><div class="chart-container" style="max-width:500px; height:400px;"><canvas id="metricsChart"></canvas></div></div>
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white mb-4">Other Common Mistakes to Avoid</h3><div class="space-y-3" id="pitfalls-accordion"><div class="accordion-item border border-slate-700 rounded-lg"><button class="accordion-header w-full text-left p-3 font-semibold bg-slate-800 hover:bg-slate-700 flex justify-between items-center text-white"><span>Inconsistent Cadence</span><span class="accordion-icon text-xl text-slate-500">+</span></button><div class="accordion-content"><div class="p-3 border-t border-slate-700 text-sm text-slate-400"><strong>Why it's a trap:</strong> Sporadic posting fails to build familiarity and the parasocial bond. Trust is built on reliability. <br><strong>The fix:</strong> Commit to a realistic schedule (e.g., 2-3 times per week) and plan content in 90-day sprints.</div></div></div><div class="accordion-item border border-slate-700 rounded-lg"><button class="accordion-header w-full text-left p-3 font-semibold bg-slate-800 hover:bg-slate-700 flex justify-between items-center text-white"><span>Poor Audio Quality</span><span class="accordion-icon text-xl text-slate-500">+</span></button><div class="accordion-content"><div class="p-3 border-t border-slate-700 text-sm text-slate-400"><strong>Why it's a trap:</strong> Bad audio is more jarring than bad video and is a primary signal of unprofessionalism. It instantly destroys credibility. <br><strong>The fix:</strong> Invest in a simple external microphone (£50-£150). It's the highest-ROI equipment purchase you can make.</div></div></div><div class="accordion-item border border-slate-700 rounded-lg"><button class="accordion-header w-full text-left p-3 font-semibold bg-slate-800 hover:bg-slate-700 flex justify-between items-center text-white"><span>No Clear CTA or Next Step</span><span class="accordion-icon text-xl text-slate-500">+</span></button><div class="accordion-content"><div class="p-3 border-t border-slate-700 text-sm text-slate-400"><strong>Why it's a trap:</strong> Content that doesn't guide the audience on what to do next fails to capture intent. <br><strong>The fix:</strong> Even a simple CTA like "What are your thoughts?" or "Save this for later" encourages engagement and signals value.</div></div></div><div class="accordion-item border border-slate-700 rounded-lg"><button class="accordion-header w-full text-left p-3 font-semibold bg-slate-800 hover:bg-slate-700 flex justify-between items-center text-white"><span>Ignoring Accessibility</span><span class="accordion-icon text-xl text-slate-500">+</span></button><div class="accordion-content"><div class="p-3 border-t border-slate-700 text-sm text-slate-400"><strong>Why it's a trap:</strong> A huge portion of social video is watched with the sound off. No captions means you lose a massive audience and appear unprofessional. <br><strong>The fix:</strong> Mandate accurate, human-reviewed captions for every single video. It's non-negotiable.</div></div></div></div></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- PART 2: THE INTERACTIVE CONTENT MATRIX -->
+    <div id="part2-container" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-12 text-center"><h1 class="text-4xl sm:text-5xl font-extrabold text-white">The B2B Founder's Content & Video Playbook</h1><p class="text-lg text-slate-400 mt-2 max-w-3xl mx-auto">Part 2: The Interactive Content Matrix</p></header>
+        <main>
+            <section id="content-matrix-p2">
+                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-2xl font-bold text-white mb-4">The Content Matrix: Your Strategic Command Centre</h2><p class="text-slate-400 leading-relaxed">Your content plan shouldn't be a rigid calendar, but a flexible, strategic tool. This matrix is designed to guide your content creation process. Simply select a cell based on your audience's current relationship stage with you (<span class="text-brand-accent font-semibold">Know, Like, or Trust</span>) and your primary goal for that piece of content (<span class="text-brand-accent font-semibold">Entertain, Inspire, or Educate</span>). The details below will update with specific video ideas, post structures, scripting advice, and even a generative AI prompt to kickstart your creative process.</p></div>
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                    <div class="lg:col-span-1 text-center py-4 flex items-center justify-end pr-4"><span class="font-bold text-slate-400">RELATIONSHIP STAGE →<br>CONTENT GOAL ↓</span></div>
+                    <div class="lg:col-span-3 grid grid-cols-3 gap-4 text-center"><div class="py-4"><h3 class="text-xl font-bold text-white">KNOW</h3></div><div class="py-4"><h3 class="text-xl font-bold text-white">LIKE</h3></div><div class="py-4"><h3 class="text-xl font-bold text-white">TRUST</h3></div></div>
+                    <div class="lg:col-span-1 bg-slate-800 p-4 rounded-lg flex items-center justify-center"><h3 class="text-xl font-bold text-brand-accent">ENTERTAIN & CONNECT</h3></div>
+                    <div class="lg:col-span-3 grid grid-cols-3 gap-4"><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center active" data-content="know-entertain"><p class="font-semibold">Get Seen</p><p class="text-xs text-slate-400">Low-friction, relatable content.</p></div><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="like-entertain"><p class="font-semibold">Show Personality</p><p class="text-xs text-slate-400">Behind-the-scenes content.</p></div><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="trust-entertain"><p class="font-semibold">Show Your Team</p><p class="text-xs text-slate-400">Humanise the business.</p></div></div>
+                    <div class="lg:col-span-1 bg-slate-800 p-4 rounded-lg flex items-center justify-center"><h3 class="text-xl font-bold text-brand-accent">INSPIRE & ALIGN</h3></div>
+                    <div class="lg:col-span-3 grid grid-cols-3 gap-4"><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="know-inspire"><p class="font-semibold">Share Your 'Why'</p><p class="text-xs text-slate-400">Introduce your mission.</p></div><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="like-inspire"><p class="font-semibold">Share Values</p><p class="text-xs text-slate-400">Connect on a human level.</p></div><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="trust-inspire"><p class="font-semibold">Showcase Success</p><p class="text-xs text-slate-400">Build social proof.</p></div></div>
+                    <div class="lg:col-span-1 bg-slate-800 p-4 rounded-lg flex items-center justify-center"><h3 class="text-xl font-bold text-brand-accent">EDUCATE & PROVE</h3></div>
+                    <div class="lg:col-span-3 grid grid-cols-3 gap-4"><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="know-educate"><p class="font-semibold">Offer a Quick Win</p><p class="text-xs text-slate-400">Initial value proposition.</p></div><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="like-educate"><p class="font-semibold">Challenge Norms</p><p class="text-xs text-slate-400">Provide a unique perspective.</p></div><div class="matrix-cell bg-slate-900 border border-slate-800 rounded-lg p-4 text-center" data-content="trust-educate"><p class="font-semibold">Solve a Problem</p><p class="text-xs text-slate-400">Demonstrate deep expertise.</p></div></div>
+                </div>
+                <div id="matrix-details" class="mt-4 p-6 bg-slate-900 rounded-lg border border-slate-800 min-h-[300px]"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- PART 3: THE 6-MONTH TRUST CAMPAIGN -->
+    <div id="part3-container" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-12 text-center"><h1 class="text-4xl sm:text-5xl font-extrabold text-white">The B2B Founder's Content & Video Playbook</h1><p class="text-lg text-slate-400 mt-2 max-w-3xl mx-auto">Part 3: The 6-Month Trust Campaign</p></header>
+        <main>
+            <section id="content-campaign">
+                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-2xl font-bold text-white mb-4">From Strategy to Schedule: Your 6-Month Roadmap</h2><p class="text-slate-400 leading-relaxed">Consistency is the engine of trust. This section translates the "Know, Like, Trust" philosophy into a structured, six-month campaign. While flexible, this roadmap provides a proven cadence and content mix to systematically build relationships with high-value individuals and target accounts. Each phase has a distinct strategic focus, moving your audience from awareness to advocacy.</p></div>
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="lg:w-1/4"><div class="sticky top-8"><h3 class="font-bold text-white mb-4">Campaign Phases</h3><div class="space-y-2" id="month-tabs"><button class="month-tab w-full text-left p-3 rounded-lg font-semibold active" data-target="month-1">Month 1: The Introduction</button><button class="month-tab w-full text-left p-3 rounded-lg font-semibold" data-target="month-2">Month 2: Building Familiarity</button><button class="month-tab w-full text-left p-3 rounded-lg font-semibold" data-target="month-3">Month 3: The Connection</button><button class="month-tab w-full text-left p-3 rounded-lg font-semibold" data-target="month-4">Month 4: Reinforcing Value</button><button class="month-tab w-full text-left p-3 rounded-lg font-semibold" data-target="month-5">Month 5: Establishing Authority</button><button class="month-tab w-full text-left p-3 rounded-lg font-semibold" data-target="month-6">Month 6: Solidifying Trust</button></div></div></div>
+                    <div class="lg:w-3/4"><div id="month-details"><div id="month-1" class="month-content active bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-2xl font-bold text-white">Month 1: The Introduction</h3><p class="text-brand-accent font-semibold mt-1 mb-4">Goal: KNOW - Get on their radar with high-volume, low-friction content.</p><p class="text-slate-400 mb-6">The objective this month is simple: become a familiar, positive presence. Your content should be easy to consume and highly relatable. Focus on showing the human side of your work. Avoid complex topics or direct sales messages.</p><h4 class="font-bold text-white mb-3">Recommended Monthly Content Mix (8 Posts):</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">4x Entertain Posts</p><p class="text-slate-400">e.g., Relatable work anecdotes, team photos, interesting observations.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Inspire Posts</p><p class="text-slate-400">e.g., Your company's mission, a quote that guides you.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Educate Post</p><p class="text-slate-400">e.g., A single, powerful tip or a surprising statistic.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x "About You" Video</p><p class="text-slate-400">A "Behind-the-Beliefs" video sharing your personal motivation.</p></div></div></div><div id="month-2" class="month-content bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-2xl font-bold text-white">Month 2: Building Familiarity</h3><p class="text-brand-accent font-semibold mt-1 mb-4">Goal: KNOW - Reinforce your presence and begin introducing more value.</p><p class="text-slate-400 mb-6">Continue the momentum from Month 1, maintaining a high cadence of relatable content. Start to weave in slightly more inspirational and educational material to hint at the deeper value you provide, and introduce a video about your core offering.</p><h4 class="font-bold text-white mb-3">Recommended Monthly Content Mix (8 Posts):</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">3x Entertain Posts</p><p class="text-slate-400">e.g., Behind-the-scenes content, a poll on an industry topic.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Inspire Posts</p><p class="text-slate-400">e.g., A story of overcoming a challenge, shout-out to a mentor.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Educate Post</p><p class="text-slate-400">A "Framework in 90s" video explaining a simple concept.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Conversion-focused Videos</p><p class="text-slate-400">1 "About You" video + 1 repurposed "Product" video from your website.</p></div></div></div><div id="month-3" class="month-content bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-2xl font-bold text-white">Month 3: The Connection</h3><p class="text-brand-accent font-semibold mt-1 mb-4">Goal: LIKE - Shift focus to building an emotional and intellectual connection.</p><p class="text-slate-400 mb-6">Now that your audience knows who you are, it's time to help them understand what you stand for. This month, the content mix shifts towards sharing your values, your unique perspective, and more substantial educational insights.</p><h4 class="font-bold text-white mb-3">Recommended Monthly Content Mix (8 Posts):</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Entertain Posts</p><p class="text-slate-400">Keep the human connection strong.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">3x Inspire Posts</p><p class="text-slate-400">e.g., A "Lesson from a Mistake" video, share your company values.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Educate Posts</p><p class="text-slate-400">e.g., A "Myth vs. Fact" video, an 'unpopular opinion' text post.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Repurposed Landing Page Video</p><p class="text-slate-400">Share a video from a key page on your site to draw traffic.</p></div></div></div><div id="month-4" class="month-content bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-2xl font-bold text-white">Month 4: Reinforcing Value</h3><p class="text-brand-accent font-semibold mt-1 mb-4">Goal: LIKE - Solidify your position as a valuable, insightful resource.</p><p class="text-slate-400 mb-6">Double down on what's working. The content mix now balances inspiration and education, demonstrating that your perspective is not only interesting but also highly valuable. You are becoming a go-to source in their feed.</p><h4 class="font-bold text-white mb-3">Recommended Monthly Content Mix (8 Posts):</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Entertain Posts</p><p class="text-slate-400">Showcase your team and company culture.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">3x Inspire Posts</p><p class="text-slate-400">e.g., Share a client success story, celebrate a team win.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">3x Educate Posts</p><p class="text-slate-400">e.g., A how-to carousel, a list of recommended tools.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x "Client Proof Capsule" Video</p><p class="text-slate-400">Begin building social proof.</p></div></div></div><div id="month-5" class="month-content bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-2xl font-bold text-white">Month 5: Establishing Authority</h3><p class="text-brand-accent font-semibold mt-1 mb-4">Goal: TRUST - Shift decisively towards demonstrating deep expertise.</p><p class="text-slate-400 mb-6">This is the pivot point. Your content becomes more educational and solution-oriented. You are no longer just sharing ideas; you are actively solving your audience's problems, proving your credibility through actionable, high-value content.</p><h4 class="font-bold text-white mb-3">Recommended Monthly Content Mix (7 Posts):</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Entertain Post</p><p class="text-slate-400">Maintain the human touch, but with less frequency.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Inspire Posts</p><p class="text-slate-400">A "Client Proof Capsule" video is a must this month.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">3x Educate Posts</p><p class="text-slate-400">e.g., A "Deep-Dive Explainer" video, a detailed case study.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Repurposed Sales Page Video</p><p class="text-slate-400">Begin to introduce clear, direct calls-to-action.</p></div></div></div><div id="month-6" class="month-content bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-2xl font-bold text-white">Month 6: Solidifying Trust</h3><p class="text-brand-accent font-semibold mt-1 mb-4">Goal: TRUST - Become the undisputed authority and start commercial conversations.</p><p class="text-slate-400 mb-6">In the final month of the campaign, your content is heavily weighted towards education and proof. You are consistently providing solutions and backing them up with evidence. This is where your pipeline is built, as trusted followers become inbound leads.</p><h4 class="font-bold text-white mb-3">Recommended Monthly Content Mix (8 Posts):</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Entertain Post</p><p class="text-slate-400">Continue to show your human side.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">2x Inspire Posts</p><p class="text-slate-400">Another "Client Proof Capsule", celebrate a major company milestone.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">4x Educate Posts</p><p class="text-slate-400">Your most in-depth, valuable content. Offer templates and resources.</p></div><div class="bg-slate-800 p-3 rounded-lg"><p class="font-semibold text-white">1x Sales or Landing Page Video</p><p class="text-slate-400">Make a clear offer or invitation to connect.</p></div></div></div></div></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- PART 4: EXECUTION & MEASUREMENT -->
+    <div id="part4-container" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-12 text-center"><h1 class="text-4xl sm:text-5xl font-extrabold text-white">The B2B Founder's Content & Video Playbook</h1><p class="text-lg text-slate-400 mt-2 max-w-3xl mx-auto">Part 4: Execution & Measurement</p></header>
+        <nav id="main-nav-p4" class="sticky top-0 bg-[#101010]/80 backdrop-blur-sm z-10 rounded-lg mb-8">
+            <div class="border-b border-slate-700">
+                <div class="-mb-px flex space-x-4 sm:space-x-8 overflow-x-auto px-4" aria-label="Tabs">
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 text-sm tab-active" data-target="content-matrix-p4">Topic & Campaign Matrix</button>
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 text-sm tab-inactive" data-target="content-copywriting">Copywriting Blueprints</button>
+                    <button class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 text-sm tab-inactive" data-target="content-measurement">Measuring What Matters</button>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="content-matrix-p4" class="content-section active">
+                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-2xl font-bold text-white mb-4">Interactive Content Planner</h2><p class="text-slate-400 leading-relaxed">Bridge the gap between your campaign schedule and daily content creation. First, select your primary <span class="font-semibold text-brand-accent">Content Pillar</span>. Then, choose the <span class="font-semibold text-brand-accent">Campaign Phase</span> you're in. The planner will generate tailored angles, formats, and ideas to ensure your content is perfectly aligned with your strategic goals.</p></div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1"><div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="font-bold text-white mb-4">1. Select Content Pillar:</h3><div class="space-y-3 matrix-selector" id="pillar-selector"><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors active" data-pillar="trends">Industry Trends & News</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-pillar="pains">Client Problems & Pains</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-pillar="culture">Team, Values & Culture</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-pillar="proof">Client Success & Social Proof</button></div><h3 class="font-bold text-white mb-4 mt-6">2. Select Campaign Phase:</h3><div class="space-y-3 matrix-selector" id="phase-selector"><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors active" data-phase="know">Months 1-2 (Know)</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-phase="like">Months 3-4 (Like)</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-phase="trust">Months 5-6 (Trust)</button></div></div></div>
+                    <div class="lg:col-span-2"><div id="matrix-output" class="bg-slate-900 p-6 rounded-lg border border-slate-800 min-h-[400px]"></div></div>
+                </div>
+            </section>
+            <section id="content-copywriting" class="content-section">
+                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-2xl font-bold text-white mb-4">Copywriting Blueprints: From Blank Page to Engaging Post</h2><p class="text-slate-400 leading-relaxed">Great visuals earn attention, but powerful copy builds the relationship. A proven framework provides structure and psychological triggers that turn a simple post into a compelling piece of communication. Explore these blueprints and see examples of how they apply to your content.</p></div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1"><div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="font-bold text-white mb-4">Choose a Framework:</h3><div class="space-y-3 matrix-selector" id="framework-selector"><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors active" data-framework="pas">Problem-Agitate-Solve (PAS)</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-framework="aida">Attention-Interest-Desire-Action (AIDA)</button><button class="w-full text-left p-3 rounded-lg font-semibold bg-slate-800 hover:bg-slate-700 transition-colors" data-framework="storybrand">StoryBrand Narrative Arc</button></div></div></div>
+                    <div class="lg:col-span-2"><div class="bg-slate-900 p-6 rounded-lg border border-slate-800 min-h-[400px]"><div id="pas-example" class="framework-example active"><h3 class="text-xl font-bold text-white mb-2">Framework: Problem-Agitate-Solve (PAS)</h3><p class="text-sm text-slate-400 mb-4"><strong>Best for:</strong> Quickly hooking the reader with a known pain point. Excellent for educational and problem-oriented content.</p><ul class="space-y-2 text-sm text-slate-300 list-disc list-inside"><li><strong>Problem:</strong> Name the pain. Start with a clear, relatable problem your audience faces.</li><li><strong>Agitate:</strong> Stir the pot. Describe the frustrations and negative consequences of that problem. Make them feel understood.</li><li><strong>Solve:</strong> Offer relief. Introduce your insight, framework, or solution as the clear path forward.</li></ul><div class="mt-4 pt-4 border-t border-slate-700"><h4 class="font-semibold text-brand-accent mb-2">Example (Text Post):</h4><div class="text-sm p-4 bg-slate-800 rounded-lg"><p class="text-slate-300"><strong class="text-white">[Problem]</strong> Ever feel like you're creating content that just disappears into the void?</p><p class="text-slate-300 mt-2"><strong class="text-white">[Agitate]</strong> You spend hours on a video or post, hit 'publish' with high hopes, only to be met with silence. It's frustrating and makes you question if it's even worth the effort.</p><p class="text-slate-300 mt-2"><strong class="text-white">[Solve]</strong> The issue isn't your content; it's the lack of a distribution system. For every hour you spend creating, you should spend another hour getting it in front of the right people. Start by creating a 'Share Pack' for your team for every video you publish.</p></div></div></div><div id="aida-example" class="framework-example"><h3 class="text-xl font-bold text-white mb-2">Framework: AIDA</h3><p class="text-sm text-slate-400 mb-4"><strong>Best for:</strong> Creating a compelling journey from awareness to action. Ideal for inspirational content or posts with a clear call-to-action.</p><ul class="space-y-2 text-sm text-slate-300 list-disc list-inside"><li><strong>Attention:</strong> The Hook. Grab their attention with a bold statement, a surprising statistic, or a provocative question.</li><li><strong>Interest:</strong> The 'Why'. Build interest by explaining why the hook matters to them. Provide context and relevance.</li><li><strong>Desire:</strong> The Vision. Create desire by painting a picture of the positive outcome or future state they can achieve.</li><li><strong>Action:</strong> The Next Step. Give a clear, simple instruction on what to do next.</li></ul><div class="mt-4 pt-4 border-t border-slate-700"><h4 class="font-semibold text-brand-accent mb-2">Example (Video Script Hook):</h4><div class="text-sm p-4 bg-slate-800 rounded-lg"><p class="text-slate-300"><strong class="text-white">[Attention]</strong> "73% of B2B buyers say they trust content from a person more than from a brand."</p><p class="text-slate-300 mt-2"><strong class="text-white">[Interest]</strong> "That means that right now, your personal profile has more potential to build trust and drive revenue than your company page."</p><p class="text-slate-300 mt-2"><strong class="text-white">[Desire]</strong> "Imagine if your ideal clients already trusted you before your first sales call. That's the power of building your personal brand."</p><p class="text-slate-300 mt-2"><strong class="text-white">[Action]</strong> "In this video, I'm going to share the 3 types of content you need to start posting this week to make that happen."</p></div></div></div><div id="storybrand-example" class="framework-example"><h3 class="text-xl font-bold text-white mb-2">Framework: StoryBrand Narrative Arc</h3><p class="text-sm text-slate-400 mb-4"><strong>Best for:</strong> Structuring any piece of content as a compelling story. Positions the audience as the hero and you as their trusted guide.</p><ul class="space-y-2 text-sm text-slate-300 list-disc list-inside"><li><strong>A Character...:</strong> Your audience (the hero).</li><li><strong>...Has a Problem:</strong> The external, internal, and philosophical challenge they face.</li><li><strong>...And Meets a Guide:</strong> You, who has a plan and empathy.</li><li><strong>...Who Gives Them a Plan:</strong> Your framework or solution.</li><li><strong>...And Calls Them to Action:</strong> The next step you want them to take.</li><li><strong>...That Helps Them Avoid Failure & Ends in Success:</strong> The stakes and the positive outcome.</li></ul><div class="mt-4 pt-4 border-t border-slate-700"><h4 class="font-semibold text-brand-accent mb-2">Example (Client Success Capsule Video):</h4><div class="text-sm p-4 bg-slate-800 rounded-lg"><p class="text-slate-300">"(Character/Problem) A client in the tech space was struggling with low sales demo attendance... (Guide) We helped them see the problem wasn't their product, but their message... (Plan) We implemented our 3-part 'Clarity First' messaging framework... (Action/Success) and in 90 days, their demo attendance rate doubled."</p></div></div></div></div></div>
+                </div>
+            </section>
+            <section id="content-measurement" class="content-section">
+                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-2xl font-bold text-white mb-4">Measuring What Matters: From Vanity to Value</h2><p class="text-slate-400 leading-relaxed">If you can't measure it, you can't improve it. A mature content strategy moves beyond chasing superficial 'vanity metrics' like likes and follower counts, and instead focuses on the numbers that signal genuine engagement and predict business impact. Use these tools to build your business case and prove the ROI of your efforts.</p></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white mb-4">The Metrics That Build Trust</h3><p class="text-sm text-slate-400 mb-4">Shift your focus from metrics that stroke the ego to those that build the business. Here’s how to separate the signal from the noise.</p><div class="space-y-4"><div class="bg-red-900/30 border border-red-500/50 p-4 rounded-lg"><h4 class="font-semibold text-red-400">Vanity Metrics (Low Impact)</h4><p class="text-sm text-slate-400 mt-1">These are easy to count but often misleading. They show reach, not resonance.</p><ul class="list-disc list-inside mt-2 text-slate-400 text-sm"><li>Likes & Reactions</li><li>Follower Count</li><li>Impressions / Reach</li></ul></div><div class="bg-green-900/30 border border-green-500/50 p-4 rounded-lg"><h4 class="font-semibold text-green-400">Impact Metrics (High Value)</h4><p class="text-sm text-slate-400 mt-1">These indicate genuine engagement and are leading indicators of business impact.</p><ul class="list-disc list-inside mt-2 text-slate-400 text-sm"><li><strong>Average Watch Time (Video):</strong> The single most important video metric.</li><li><strong>Comment Quality:</strong> Are people asking thoughtful questions?</li><li><strong>Shares & Saves:</strong> Shows the content is valuable enough to keep or share.</li><li><strong>Inbound DMs from Target Accounts:</strong> A direct line to pipeline.</li></ul></div></div></div>
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white mb-2">Lightweight ROI Calculator</h3><p class="text-sm text-slate-400 mb-4">Connect your content efforts to tangible financial outcomes. Use this simple model to estimate the potential pipeline lift generated by your thought leadership.</p><div class="space-y-4 text-sm"><div><label for="acv" class="block font-medium text-slate-300">Average Contract Value (£)</label><input type="number" id="acv" class="mt-1 block w-full rounded-md border-slate-600 bg-slate-800 text-white shadow-sm focus:border-brand-accent focus:ring-brand-accent p-2" value="50000"></div><div><label for="lift" class="block font-medium text-slate-300">Assumed Win-Rate Lift from Content (%)</label><input type="number" id="lift" class="mt-1 block w-full rounded-md border-slate-600 bg-slate-800 text-white shadow-sm focus:border-brand-accent focus:ring-brand-accent p-2" value="2"></div><div><label for="opportunities" class="block font-medium text-slate-300">Influenced Opportunities / Year</label><input type="number" id="opportunities" class="mt-1 block w-full rounded-md border-slate-600 bg-slate-800 text-white shadow-sm focus:border-brand-accent focus:ring-brand-accent p-2" value="50"></div><div class="pt-4 border-t border-slate-700"><h4 class="font-semibold text-white">Estimated Annual Pipeline Lift:</h4><p id="roi-result" class="text-2xl font-bold text-brand-accent mt-1">£0</p></div></div></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- PART 5: ADVANCED STRATEGY & RESOURCES -->
+    <div id="part5-container" class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <header class="mb-12 text-center"><h1 class="text-4xl sm:text-5xl font-extrabold text-white">The B2B Founder's Content & Video Playbook</h1><p class="text-lg text-slate-400 mt-2 max-w-3xl mx-auto">Part 5: Advanced Strategy & Resources</p></header>
+        <main>
+            <section id="content-advanced">
+                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 mb-8"><h2 class="text-2xl font-bold text-white mb-4">Amplifying Your Impact: Advanced Strategy</h2><p class="text-slate-400 leading-relaxed">Creating great content is only half the battle. The most successful executive video programs are organisation-wide efforts. This section provides actionable checklists for multiplying the ROI of every asset through internal adoption and ensuring your brand is protected through robust compliance and accessibility standards.</p></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white mb-4">Internal Adoption & Distribution Checklist</h3><p class="text-sm text-slate-400 mb-4">Turn your content into a company-wide asset. Employee networks have a larger and more trusted reach than corporate channels.</p><div class="space-y-3 text-sm"><div class="checklist-item relative flex items-start"><input id="c1" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c1" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Form a cross-functional content council (Sales, Comms, HR).</label></div><div class="checklist-item relative flex items-start"><input id="c2" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c2" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Create a simple 'Share Pack' for each key video.</label></div><div class="checklist-item relative flex items-start"><input id="c3" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c3" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Train sales team how to use videos in outreach sequences.</label></div><div class="checklist-item relative flex items-start"><input id="c4" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c4" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Establish a content repurposing workflow (video to blog, etc.).</label></div></div></div>
+                    <div class="bg-slate-900 p-6 rounded-lg border border-slate-800"><h3 class="text-xl font-bold text-white mb-4">Accessibility & Compliance Checklist</h3><p class="text-sm text-slate-400 mb-4">Protect your brand and ensure maximum reach. These steps are non-negotiable for professional B2B content.</p><div class="space-y-3 text-sm"><div class="checklist-item relative flex items-start"><input id="c5" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c5" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Mandate human-reviewed captions for ALL videos.</label></div><div class="checklist-item relative flex items-start"><input id="c6" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c6" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Provide a full text transcript for videos over 3 minutes.</label></div><div class="checklist-item relative flex items-start"><input id="c7" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c7" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Create an agile review process with legal/compliance.</label></div><div class="checklist-item relative flex items-start"><input id="c8" type="checkbox" class="absolute w-4 h-4 opacity-0"><label for="c8" class="flex items-center cursor-pointer text-slate-300"><span class="w-4 h-4 inline-block mr-3 rounded border border-slate-500 bg-slate-800 flex-shrink-0"></span><svg class="hidden w-4 h-4 text-brand-accent absolute left-0" viewBox="0 0 16 16" fill="currentColor"><path d="M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z"></svg>Define editorial guidelines with required disclaimers.</label></div></div></div>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-lg border border-slate-800">
+                    <h3 class="text-2xl font-bold text-white mb-4">Recommended Equipment Tiers</h3>
+                    <p class="text-sm text-slate-400 mb-6">Clarity outperforms charisma, and good audio is more important than perfect video. You can start creating high-quality, authentic content without a Hollywood budget. Use this 'Good, Better, Best' model as a guide.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="border border-slate-700 rounded-lg p-4 bg-slate-800"><h4 class="font-bold text-brand-accent">Good: The Starter Kit</h4><p class="text-xs text-slate-400 mb-2">Budget: < £500</p><ul class="text-sm text-slate-300 list-disc list-inside space-y-1"><li>Modern Smartphone (iPhone 13+ / Pixel 6+)</li><li>Wired Lavalier Microphone (e.g., Rode SmartLav+)</li><li>LED Ring Light</li><li>Basic Tripod/Stand</li></ul></div>
+                        <div class="border border-slate-700 rounded-lg p-4 bg-slate-800"><h4 class="font-bold text-brand-accent">Better: The Pro Kit</h4><p class="text-xs text-slate-400 mb-2">Budget: £1,500 - £3,000</p><ul class="text-sm text-slate-300 list-disc list-inside space-y-1"><li>Mirrorless Camera (e.g., Sony ZV-E10)</li><li>Wireless Lavalier or Shotgun Mic (e.g., Rode Wireless GO II)</li><li>Two-point LED Lighting Kit (Key & Fill)</li><li>Teleprompter App on a tablet</li></ul></div>
+                        <div class="border border-slate-700 rounded-lg p-4 bg-slate-800"><h4 class="font-bold text-brand-accent">Best: The Studio Kit</h4><p class="text-xs text-slate-400 mb-2">Budget: > £5,000</p><ul class="text-sm text-slate-300 list-disc list-inside space-y-1"><li>Cinema or Full-Frame Camera</li><li>Professional Podcast Mic (e.g., Shure SM7B)</li><li>Three-Point Lighting Setup with Softboxes</li><li>Hardware Teleprompter System</li></ul></div>
+                    </div>
+                </div>
+                <div class="mt-12 p-8 bg-brand-accent/10 rounded-lg border border-brand-accent/30 text-center">
+                    <h2 class="text-3xl font-bold text-white mb-4">Ready to Build Your Content Engine?</h2>
+                    <p class="text-slate-300 max-w-2xl mx-auto mb-6">This playbook provides the strategy, but execution requires time and expertise. The <strong class="text-white">Epiphany Squared Process</strong> is our complete done-with-you service designed to turn your insights into a powerful, trust-building content engine.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-left my-8 text-sm">
+                        <div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">1. Strategy</h4><p class="text-xs text-slate-400 mt-1">We build your unique Message Architecture and a 90-day content plan that aligns with your business goals.</p></div>
+                        <div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">2. Coaching</h4><p class="text-xs text-slate-400 mt-1">We work 1-on-1 to find your authentic on-camera voice, turning apprehension into confident authority.</p></div>
+                        <div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">3. Production</h4><p class="text-xs text-slate-400 mt-1">With 23 years in the film industry, we handle all aspects of filming and editing, ensuring broadcast-quality results.</p></div>
+                        <div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent">4. Management</h4><p class="text-xs text-slate-400 mt-1">We take on the scheduling and distribution, ensuring your content is published consistently for maximum impact.</p></div>
+                    </div>
+                    <a href="mailto:kevan@epiphanycontent.com" class="inline-block bg-brand-accent text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-yellow-300 transition-colors text-lg">Let's Discuss Your Strategy</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- UNIFIED SCRIPT FOR ALL PARTS -->
+    <script>
+    window.addEventListener('load', function() {
+    
+        // --- INITIALIZER FOR PART 1 ---
+        function initPart1() {
+            const container = document.getElementById('part1-container');
+            if (!container) return;
+    
+            const mainNav = container.querySelector('#main-nav');
+            const tabs = mainNav ? Array.from(mainNav.querySelectorAll('.tab-btn')) : [];
+            const sections = Array.from(container.querySelectorAll('main > .content-section'));
+            const accordions = container.querySelectorAll('.accordion-header');
+            let trustChart, metricsChart;
+    
+            function switchTab(targetId) {
+                tabs.forEach(tab => {
+                    const isActive = tab.dataset.target === targetId;
+                    tab.classList.toggle('tab-active', isActive);
+                    tab.classList.toggle('tab-inactive', !isActive);
+                });
+                sections.forEach(section => {
+                    section.classList.toggle('active', section.id === targetId);
+                });
+                
+                if (targetId === 'content-mindset' && !trustChart) initTrustChart();
+                if (targetId === 'content-pitfalls' && !metricsChart) initMetricsChart();
+            }
+    
+            function initTrustChart() {
+                const ctx = container.querySelector('#trustChart')?.getContext('2d');
+                if (!ctx) return;
+                trustChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: { labels: ['Prefer Authentic Personal Content', 'Prefer Polished Corporate Ads'], datasets: [{ data: [73, 27], backgroundColor: ['#F5D251', '#475569'], borderColor: '#1e293b', borderWidth: 4 }] },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { color: '#E0E0E0', font: { family: "'Poppins', sans-serif" } } }, title: { display: false }, tooltip: { callbacks: { label: (c) => `${c.label}: ${c.raw}%` }, backgroundColor: '#1f2937', titleColor: '#ffffff', bodyColor: '#cbd5e1', titleFont:{family:"'Poppins', sans-serif"}, bodyFont:{family:"'Poppins', sans-serif"} } }, cutout: '60%' }
+                });
+            }
+    
+            function initMetricsChart() {
+                const ctx = container.querySelector('#metricsChart')?.getContext('2d');
+                if (!ctx) return;
+                metricsChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: { labels: ['Likes', 'Followers', 'Avg. Watch Time', 'Comment Quality', 'Pipeline Influence'], datasets: [{ label: 'Impact on Trust', data: [10, 20, 75, 85, 95], backgroundColor: (c) => (c.dataset.data[c.dataIndex] < 50 ? '#475569' : '#F5D251'), borderColor: '#e4bf4a', borderWidth: 1, borderRadius: 4 }] },
+                    options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, title: { display: true, text: 'Vanity Metrics vs. Impact Metrics', color: '#E0E0E0', font: { size: 16, family: "'Poppins', sans-serif" } }, tooltip: { callbacks: { label: (c) => `  ${c.raw}% Impact` }, backgroundColor: '#1f2937', titleColor: '#ffffff', bodyColor: '#cbd5e1', titleFont:{family:"'Poppins', sans-serif"}, bodyFont:{family:"'Poppins', sans-serif"} } }, scales: { x: { beginAtZero: true, max: 100, grid: { color: 'rgba(255, 255, 255, 0.1)' }, ticks: { color: '#94a3b8', callback: (v) => v + '%' } }, y: { grid: { display: false }, ticks: { color: '#E0E0E0' } } } }
+                });
+            }
+    
+            if (mainNav) {
+                mainNav.addEventListener('click', (e) => {
+                    const clickedTab = e.target.closest('.tab-btn');
+                    if (clickedTab) switchTab(clickedTab.dataset.target);
+                });
+            }
+            
+            accordions.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('.accordion-icon');
+                    const isOpening = !content.style.maxHeight || content.style.maxHeight === '0px';
+                    content.style.maxHeight = isOpening ? content.scrollHeight + 'px' : '0px';
+                    icon.textContent = isOpening ? '-' : '+';
+                });
+            });
+    
+            if (tabs.length > 0) switchTab(tabs[0].dataset.target);
+        }
+    
+        // --- INITIALIZER FOR PART 2 ---
+        function initPart2() {
+            const container = document.getElementById('part2-container');
+            if (!container) return;
+            const cells = container.querySelectorAll('.matrix-cell');
+            const detailsEl = container.querySelector('#matrix-details');
+            const data = { /* ... Part 2 data object ... */ };
+            
+            const contentData = {
+                know_entertain: { title: "KNOW + ENTERTAIN: Get Seen", video: "Video Idea: 'A Day in the Life' Snippet", video_desc: "A 30-second, phone-shot video showing a relatable moment, like your commute, making coffee, or a cat interrupting a Zoom call. It’s low-effort and highly humanising.", scripting: "Structure: No script needed. Speak authentically. Start with 'Here’s something you don’t see every day...' and end with a simple sign-off.", post: "Post Idea: A selfie at an industry event with the caption, 'The best part of [Event Name] isn't the talks, it's the conversations in the hallway. Great to connect with so many smart people.'", ai_prompt: "Act as a B2B content strategist. Write a short, relatable LinkedIn post (under 150 words) from a CEO in the [Your Industry] sector. The post should be based on a humorous or unexpected everyday work moment like [e.g., a pet interrupting a video call]. The goal is to be entertaining and build familiarity. Avoid any sales language or CTAs." },
+                know_inspire: { title: "KNOW + INSPIRE: Share Your 'Why'", video: "Video Idea: 'Mission Motivation'", video_desc: "A 60-second video explaining the core mission of your company and the personal story behind why it matters to you. This connects your business goals to a human purpose.", scripting: "Structure (StoryBrand): 1. Problem: State a problem your audience faces. 2. Vision: Share your vision for a better way. 3. Motivation: Briefly share the personal story that drives this vision.", post: "Post Idea: Share an article about a breakthrough in your industry. Add your commentary: 'This is huge. It’s a step closer to the future we’ve been working towards, where [Your Vision].'", ai_prompt: "Act as a B2B storyteller. Draft a 60-second video script for a CEO in [Your Industry]. The topic is the company's core mission. Use the StoryBrand framework: define a key customer problem, articulate a guiding principle or vision that addresses it, and briefly tell the personal story or belief that inspired the company's founding. The tone should be passionate and visionary." },
+                like_entertain: { title: "LIKE + ENTERTAIN: Show Personality", video: "Video Idea: 'Behind the Scenes' Tour", video_desc: "A quick, unscripted tour of your workspace or a project you're working on. It breaks down the corporate barrier and shows the real environment where the work happens.", scripting: "Structure: Conversational. 'A few of you asked what our office looks like, so I wanted to give you a quick tour...' Highlight one or two interesting details.", post: "Post Idea: A poll comparing two industry buzzwords with a humorous comment. 'Which of these terms do you think we should officially retire in 2025? Cast your vote!'", ai_prompt: "Act as a B2B content creator. Write a short, engaging LinkedIn post (under 150 words) from a Founder in [Your Industry]. The goal is to show personality and be entertaining. Create a poll that playfully pits two common industry buzzwords or practices against each other. Add a witty, one-sentence observation to spark conversation." },
+                like_inspire: { title: "LIKE + INSPIRE: Share Values", video: "Video Idea: 'A Lesson from a Mistake'", video_desc: "A video sharing a story about a professional mistake you made and the key lesson you learned. Supported by Self-Disclosure Theory, this vulnerability builds immense trust.", scripting: "Structure: 1. The Situation: Briefly set the scene. 2. The Mistake: Clearly state what went wrong. 3. The Lesson: Articulate the valuable takeaway. 4. The Application: Explain how it shapes your leadership today.", post: "Post Idea: A photo from a personal challenge (e.g., a hike, a marathon) with copy connecting the experience to a business value like resilience or preparation.", ai_prompt: "Act as an executive communications coach. Draft a 90-second video script for a CEO in [Your Industry] based on the theme 'A Lesson from a Mistake'. Structure the narrative: 1. The Situation (a brief context). 2. The Mistake (a candid admission of a professional error). 3. The Lesson (the key insight gained). 4. The Application (how that lesson improves their leadership or business today). The tone should be humble, reflective, and confident." },
+                like_educate: { title: "LIKE + EDUCATE: Challenge Norms", video: "Video Idea: 'Myth vs. Fact'", video_desc: "A direct-to-camera video debunking a common industry myth or 'best practice'. This positions you as a critical thinker and an authority who challenges the status quo.", scripting: "Structure (Problem-Insight-Solution): 1. The Myth (Problem): 'You've probably been told that...' 2. The Flaw (Insight): 'But here's why that's wrong...' 3. The Truth (Solution): 'A better way to think about it is...'", post: "Post Idea: A text post starting with 'Unpopular opinion: [Your counter-intuitive take on an industry trend]. Here’s why...' followed by 3 bullet points.", ai_prompt: "Act as a B2B thought leader and scriptwriter. Create a 90-second video script for a Founder in [Your Industry] with the title 'Myth vs. Fact'. The script must debunk a widely held belief or common practice in their field. Use the Problem-Agitate-Solve framework: 1. State the common myth (Problem). 2. Explain why following it leads to negative outcomes (Agitate). 3. Present your counter-intuitive approach as the better solution (Solve). The tone should be confident and insightful." },
+                trust_entertain: { title: "TRUST + ENTERTAIN: Show Your Team", video: "Video Idea: 'Meet the Expert'", video_desc: "A short, casual interview with a key team member, asking them about their role and one piece of advice they have for clients. This builds trust in your entire organisation, not just you.", scripting: "Structure: Keep it simple. 'I'm here with [Name], our [Role]. [Name], what’s the #1 mistake you see people make when it comes to [Their Area of Expertise]?'", post: "Post Idea: A group photo of your team at a company event or volunteering. The copy should celebrate the team's contribution to the company's mission.", ai_prompt: "Act as a B2B content strategist. Write a LinkedIn post from a CEO introducing a key team member. The goal is to humanise the business and build trust in the team's expertise. The post should tag the team member and ask them one insightful question about their role, such as 'What’s the most common question you get from our clients?'. The tone should be celebratory and collaborative." },
+                trust_inspire: { title: "TRUST + INSPIRE: Showcase Success", video: "Video Idea: 'Client Proof Capsule'", video_desc: "A 45-90 second video where you briefly outline a client's problem (anonymised) and the successful outcome you delivered. Use a powerful client quote as on-screen text.", scripting: "Structure: 1. The Client's Problem: 'A client came to us struggling with...' 2. Our Approach: 'Instead of the usual approach, we...' 3. The Result: 'The outcome was [specific, quantifiable result].'", post: "Post Idea: Share a client's testimonial as a quote graphic (with their permission). In the copy, thank them and highlight one specific aspect of the collaboration that made it successful.", ai_prompt: "Act as a B2B case study writer. Draft a 75-second video script for a Founder in [Your Industry] that showcases a client success story. Structure it using the Problem-Solution-Result framework: 1. Describe the client's challenge without naming them. 2. Briefly explain your company's unique approach or insight. 3. State the specific, quantifiable result achieved. Include a placeholder for a powerful client quote to be displayed as on-screen text." },
+                trust_educate: { title: "TRUST + EDUCATE: Solve a Problem", video: "Video Idea: 'Deep-Dive Explainer'", video_desc: "A 3-5 minute video giving actionable, in-depth advice on a complex topic. This is for warm leads seeking your expertise and demonstrates your authority beyond doubt.", scripting: "Structure: 1. The Hook: 'If you're struggling with [Complex Problem], you're not alone. Here's my 3-step framework to solve it.' 2. The Steps: Clearly walk through each step with on-screen graphics for support. 3. The CTA: 'If this was helpful, DM me for a template that walks you through this process.'", post: "Post Idea: A detailed how-to guide as a text post with bullet points and clear formatting. Offer a free resource (template, checklist) in exchange for a comment or DM to generate leads.", ai_prompt: "Act as an expert instructional designer and B2B scriptwriter. Create a 3-minute 'deep-dive explainer' video script for a CEO in [Your Industry]. The topic is solving [a complex, high-value customer problem]. Structure the script: 1. A hook that states the problem and promises a clear framework. 2. Three distinct, actionable steps to solve the problem, with placeholders for on-screen visuals. 3. A clear call-to-action that invites viewers to request a related resource via DM to generate leads. The tone must be authoritative and educational." }
+            };
+
+            function updateMatrix(key) {
+                const item = contentData[key.replace("-", "_")];
+                detailsEl.innerHTML = `<h3 class="text-2xl font-bold text-white mb-4">${item.title}</h3><div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm"><div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent mb-2">${item.video}</h4><p class="text-slate-400 mb-3">${item.video_desc}</p><h5 class="font-semibold text-white">Scripting & Structure:</h5><p class="text-slate-400">${item.scripting}</p></div><div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent mb-2">Text & Image Post Idea</h4><p class="text-slate-400">${item.post}</p></div></div><div class="mt-6 bg-slate-800 p-4 rounded-lg"><div class="flex justify-between items-center"><h4 class="font-semibold text-brand-accent">Generative AI Prompt Starter</h4><button class="copy-btn bg-slate-700 text-xs text-white px-2 py-1 rounded hover:bg-slate-600 transition-colors">Copy Prompt</button></div><div class="mt-2 p-3 bg-slate-900 rounded"><code class="text-xs text-slate-300 prompt-code">${item.ai_prompt}</code></div></div>`;
+            }
+
+            cells.forEach(cell => {
+                cell.addEventListener("click", () => {
+                    cells.forEach(c => c.classList.remove("active"));
+                    cell.classList.add("active");
+                    updateMatrix(cell.dataset.content);
+                });
+            });
+
+            detailsEl.addEventListener('click', function(e) {
+                if (e.target.classList.contains('copy-btn')) {
+                    const text = e.target.closest('.bg-slate-800').querySelector('.prompt-code').innerText;
+                    navigator.clipboard.writeText(text).then(() => {
+                        e.target.innerText = 'Copied!';
+                        setTimeout(() => { e.target.innerText = 'Copy Prompt'; }, 2000);
+                    });
+                }
+            });
+            
+            updateMatrix("know-entertain");
+        }
+    
+        // --- INITIALIZER FOR PART 3 ---
+        function initPart3() {
+            const container = document.getElementById('part3-container');
+            if (!container) return;
+            const tabs = container.querySelectorAll('.month-tab');
+            const contents = container.querySelectorAll('.month-content');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+                    tab.classList.add('active');
+                    container.querySelector(`#${tab.dataset.target}`).classList.add('active');
+                });
+            });
+        }
+        
+        // --- INITIALIZER FOR PART 4 ---
+        function initPart4() {
+            const container = document.getElementById('part4-container');
+            if (!container) return;
+    
+            const matrixData = {
+                trends: { know: { title: 'Angle: Share a Surprising Statistic', video: 'A 30s reaction video to a new industry report.', post: 'Post a chart with a provocative question to your network.' }, like: { title: 'Angle: Post an "Unpopular Opinion"', video: 'A "Myth vs. Fact" video debunking a common trend.', post: 'A text post starting with "Hot take:" followed by your contrarian view.' }, trust: { title: 'Angle: Publish a Predictive Analysis', video: 'A "Deep-Dive Explainer" on trends that will define the next 18 months.', post: 'A long-form article or carousel detailing your predictions.' }},
+                pains: { know: { title: 'Angle: Ask a Simple, Relatable Question', video: 'A quick selfie video asking, "What\'s the one task you wish you could automate?"', post: 'A poll about the most time-consuming part of your audience\'s week.' }, like: { title: 'Angle: Share a Relatable Struggle', video: 'A "Lesson from a Mistake" video about a time you struggled with their problem.', post: 'An authentic story about a past failure and what it taught you.' }, trust: { title: 'Angle: Provide a Tangible Solution', video: 'A "Framework in 90s" video that names their problem and offers a solution.', post: 'A how-to guide with a downloadable checklist to solve a specific pain point.' }},
+                culture: { know: { title: 'Angle: Show a Glimpse of Your World', video: 'A quick, fun "Day in the Life" snippet video.', post: 'A photo from a team outing with a simple, positive caption.' }, like: { title: 'Angle: Highlight Company Values in Action', video: 'A video celebrating a team member who embodied a core value.', post: 'A post about your company\'s mission and why it matters personally.' }, trust: { title: 'Angle: Showcase Your Team\'s Expertise', video: 'A "Meet the Expert" interview with a key team member.', post: 'A post highlighting a team member\'s recent achievement or certification.' }},
+                proof: { know: { title: 'Angle: Share an Anonymous Insight', video: 'A video sharing a key insight learned from a recent client conversation.', post: '"Spoke with a client today who said something brilliant..."' }, like: { title: 'Angle: Post a Client Testimonial', video: 'A short video featuring a client quote as on-screen text.', post: 'A quote graphic with a testimonial, tagging the client (with permission).' }, trust: { title: 'Angle: Release a Case Study', video: 'A "Client Proof Capsule" video detailing the Problem, Solution, and Quantifiable Result.', post: 'A detailed breakdown of a successful project, showcasing your process.' }}
+            };
+    
+            const mainNav = container.querySelector('#main-nav-p4');
+            const tabs = mainNav ? Array.from(mainNav.querySelectorAll('.tab-btn')) : [];
+            const sections = Array.from(container.querySelectorAll('main > .content-section'));
+            const pillarSelector = container.querySelector('#pillar-selector');
+            const phaseSelector = container.querySelector('#phase-selector');
+            const matrixOutput = container.querySelector('#matrix-output');
+            const frameworkSelector = container.querySelector('#framework-selector');
+            const frameworkExamples = container.querySelectorAll('.framework-example');
+    
+            function switchMainTab(targetId) {
+                tabs.forEach(tab => {
+                    const isActive = tab.dataset.target === targetId;
+                    tab.classList.toggle('tab-active', isActive);
+                    tab.classList.toggle('tab-inactive', !isActive);
+                });
+                sections.forEach(section => {
+                    section.classList.toggle('active', section.id === targetId);
+                });
+            }
+    
+            function updateMatrix() {
+                if (!pillarSelector || !phaseSelector || !matrixOutput) return;
+                const pillarBtn = pillarSelector.querySelector('button.active');
+                const phaseBtn = phaseSelector.querySelector('button.active');
+                if (!pillarBtn || !phaseBtn) return;
+                const pillar = pillarBtn.dataset.pillar;
+                const phase = phaseBtn.dataset.phase;
+                const data = matrixData[pillar][phase];
+                matrixOutput.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">${data.title}</h3><div class="space-y-4"><div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent mb-2">Video Idea</h4><p class="text-sm text-slate-400">${data.video}</p></div><div class="bg-slate-800 p-4 rounded-lg"><h4 class="font-semibold text-brand-accent mb-2">Text/Image Post Idea</h4><p class="text-sm text-slate-400">${data.post}</p></div></div>`;
+            }
+            
+            function calcRoi() {
+                const acv = parseFloat(container.querySelector("#acv")?.value) || 0;
+                const lift = parseFloat(container.querySelector("#lift")?.value) || 0;
+                const opportunities = parseFloat(container.querySelector("#opportunities")?.value) || 0;
+                const resultEl = container.querySelector("#roi-result");
+                if (resultEl) {
+                    const result = acv * (lift / 100) * opportunities;
+                    resultEl.textContent = "£" + result.toLocaleString("en-GB", {minimumFractionDigits:0, maximumFractionDigits:0});
+                }
+            }
+    
+            if (mainNav) {
+                mainNav.addEventListener('click', (e) => {
+                    const clickedTab = e.target.closest('.tab-btn');
+                    if (clickedTab) switchMainTab(clickedTab.dataset.target);
+                });
+            }
+    
+            function setupSelector(selector, callback) {
+                if (!selector) return;
+                selector.addEventListener('click', e => {
+                    const button = e.target.closest('button');
+                    if (button) {
+                        Array.from(selector.querySelectorAll('button')).forEach(b => b.classList.remove('active'));
+                        button.classList.add('active');
+                        if (callback) callback();
+                    }
+                });
+            }
+            
+            setupSelector(pillarSelector, updateMatrix);
+            setupSelector(phaseSelector, updateMatrix);
+            setupSelector(frameworkSelector, () => {
+                const button = frameworkSelector.querySelector('button.active');
+                if (button) {
+                    const frameworkId = button.dataset.framework + '-example';
+                    frameworkExamples.forEach(ex => ex.classList.toggle('active', ex.id === frameworkId));
+                }
+            });
+    
+            ['acv', 'lift', 'opportunities'].forEach(id => {
+                const el = container.querySelector(`#${id}`);
+                if (el) el.addEventListener('input', calcRoi);
+            });
+    
+            if (tabs.length > 0) switchMainTab(tabs[0].dataset.target);
+            updateMatrix();
+            calcRoi();
+        }
+    
+        // --- RUN ALL INITIALIZERS ---
+        initPart1();
+        initPart2();
+        initPart3();
+        initPart4();
+        // Part 5 has no JS, so no initPart5() is needed.
+    });
+    </script>
+</body>
+</html>
